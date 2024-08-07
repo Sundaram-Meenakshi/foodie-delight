@@ -33,8 +33,8 @@ FoodieDelight is a Restaurant Admin Panel built using React and MUI. This applic
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/foodiedelight-admin-panel.git
-   cd foodiedelight-admin-panel
+   git clone https://github.com/Sundaram-Meenakshi/foodie-delight
+   cd foodie-delight
    ```
 
 2. **Install dependencies:**
