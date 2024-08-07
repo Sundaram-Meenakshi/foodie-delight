@@ -1,8 +1,8 @@
-# FoodieDelight Restaurant Admin Panel
+# FoodieDelight Admin Panel
 
 ## Overview
 
-FoodieDelight is a Restaurant Admin Panel built using React and Material-UI. This application allows administrators to add, edit, delete, and view restaurant details, including menu items. It is designed to be responsive, user-friendly, and easily deployable to a production environment.
+FoodieDelight is a Restaurant Admin Panel built using React and MUI. This application allows administrators to add, edit, delete, and view restaurant details, including menu items. It is designed to be responsive, user-friendly, and easily deployable to a production environment.
 
 ## Features
 
@@ -10,11 +10,10 @@ FoodieDelight is a Restaurant Admin Panel built using React and Material-UI. Thi
 - Manage restaurant menus, including adding, editing, and deleting menu items.
 - Upload and display restaurant images.
 - Responsive design for seamless use on different devices.
-- User authentication and admin panel with profile management.
 
 ## Technologies Used
 
-- **Frontend:** React, Material-UI
+- **Frontend:** React, MUI
 - **State Management:** React Hook Form
 - **Routing:** React Router
 - **HTTP Client:** Axios
