@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# FoodieDelight Restaurant Admin Panel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+FoodieDelight is a Restaurant Admin Panel built using React and Material-UI. This application allows administrators to add, edit, delete, and view restaurant details, including menu items. It is designed to be responsive, user-friendly, and easily deployable to a production environment.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add, edit, delete, and view restaurant details.
+- Manage restaurant menus, including adding, editing, and deleting menu items.
+- Upload and display restaurant images.
+- Responsive design for seamless use on different devices.
+- User authentication and admin panel with profile management.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:** React, Material-UI
+- **State Management:** React Hook Form
+- **Routing:** React Router
+- **HTTP Client:** Axios
+- **Build Tool:** Webpack
+- **Testing:** Jest, React Testing Library
+- **Deployment:** Netlify/Vercel/AWS S3 (Choose one based on your preference)
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (version 14 or higher)
+- npm (version 6 or higher) or Yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/yourusername/foodiedelight-admin-panel.git
+   cd foodiedelight-admin-panel
+   ```
 
-### `npm run eject`
+2. **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Set up environment variables:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Create a `.env` file in the root directory and add the following variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```env
+   REACT_APP_API_BASE_URL=http://your-api-base-url
+   REACT_APP_OTHER_ENV_VARIABLE=your-value
+   ```
 
-## Learn More
+### Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Start the development server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-### Code Splitting
+   The application will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Build for production:**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   This will generate optimized static files in the `build` directory.
 
-### Making a Progressive Web App
+3. **Serve the production build locally (optional):**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npx serve -s build
+   ```
 
-### Advanced Configuration
+   This serves the production build locally to test before deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Running Tests
+
+1. **Run unit and integration tests:**
+
+   ```bash
+   npm test
+   # or
+   yarn test
+   ```
+
+2. **Run end-to-end tests:**
+
+   (Assuming you have set up Cypress or a similar tool)
+
+   ```bash
+   npm run e2e
+   # or
+   yarn e2e
+   ```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Deploy to Netlify:**
 
-### `npm run build` fails to minify
+   - Connect your GitHub repository to Netlify.
+   - Set up build settings with the build command `npm run build` and publish directory as `build`.
+   - Add environment variables in the Netlify dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Deploy to Vercel:**
+
+   - Connect your GitHub repository to Vercel.
+   - Configure project settings and deploy.
+
+3. **Deploy to AWS S3:**
+
+   - Build the project using `npm run build`.
+   - Upload the contents of the `build` directory to an S3 bucket.
+   - Configure the S3 bucket to serve a static website.
+   - (Optional) Use CloudFront for CDN distribution.
